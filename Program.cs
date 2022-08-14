@@ -7,17 +7,18 @@ namespace Linkedlist
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("***Output For LinkedList ****");
+            Console.WriteLine("***Output For LinkedList Append ****");
             Console.WriteLine(":::::::::::::::::::::::::::::::::");
             // Create Object Of Implementing Class.
-            LinkedListAdd Linkedlist = new LinkedListAdd();
-            //Insert 70 At Staring.
-            Linkedlist.Add(70);
-            //Inserted 30 To 70.
-            Linkedlist.Add(30);
-            //Inserted 56 To 30
+            LinkedListAppend Linkedlist = new LinkedListAppend();
+            //Insert 56 At Staring.
             Linkedlist.Add(56);
-            //Display The Linkedlist.
+            //Append 30 To 56.
+            Linkedlist.Append(30);
+            //Append 70 To 30.
+            Linkedlist.Append(70);
+
+          //Display The Linkedlist.
             Linkedlist.Display();
         }
     }
