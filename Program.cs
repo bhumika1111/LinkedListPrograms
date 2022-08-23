@@ -6,19 +6,23 @@ namespace LinkedListNew
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("**Output For Element Inserted At a Particular Position Using Insert Method **");
-            InsertInBetween insertInBetween = new InsertInBetween();
-            insertInBetween.Add(56);
-            insertInBetween.Append(70);
-            //Creating object of Node class and passing data. 
-            //Here 30 is Inserted To The List.
-            Node node = new Node(30);
-            Console.WriteLine("**Element Inserted In Between ,The List After 56 : {0}", node.data,"**");
-            Console.WriteLine("**So After Inserting The Final List Appears As :***");
+
+            Console.WriteLine("**Output For First Element Deleted from the list using pop Method**"); 
             Console.WriteLine(":::::::::::::::::::::::::::::::::::::::");
-            insertInBetween.Insert(56, node);
-            insertInBetween.Display();
-         
+            Console.WriteLine("Adding Elements as follows :");
+            PopMethod popMethod = new PopMethod();
+            popMethod.Add(56);
+            popMethod.Add(30);
+            popMethod.Add(70);
+            Console.WriteLine(":::::::::::::::::::::::::::::::::::::::");
+            popMethod.Display();
+            Console.WriteLine(":::::::::::::::::::::::::::::::::::::::");
+            Console.WriteLine("**Element Popped out from the list**");
+            popMethod.pop();
+            popMethod.Display();
+            Console.WriteLine(":::::::::::::::::::::::::::::::::::::::");
+            
+
         }
     }
 }
