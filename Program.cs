@@ -6,19 +6,23 @@ namespace LinkedListNew
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("**Output For Element Inserted At a Particular Position Using Insert Method **");
-            InsertInBetween insertInBetween = new InsertInBetween();
-            insertInBetween.Add(56);
-            insertInBetween.Append(70);
-            //Creating object of Node class and passing data. 
-            //Here 30 is Inserted To The List.
-            Node node = new Node(30);
-            Console.WriteLine("**Element Inserted In Between ,The List After 56 : {0}", node.data,"**");
-            Console.WriteLine("**So After Inserting The Final List Appears As :***");
+
+            Console.WriteLine("**Output For Search  Particular Element using Search Method from the List**");
+            Console.WriteLine("Adding Elements as follows :");
             Console.WriteLine(":::::::::::::::::::::::::::::::::::::::");
-            insertInBetween.Insert(56, node);
-            insertInBetween.Display();
-         
+            SearchTheElement search = new SearchTheElement();
+            search.Add(56);
+            search.Add(30);
+            search.Add(70);
+            Console.WriteLine(":::::::::::::::::::::::::::::::::::::::");
+            search.Display();
+            Console.WriteLine(":::::::::::::::::::::::::::::::::::::::");
+            Console.WriteLine("After searching for a Particular Element ");
+            search.Search(30);
+
+            Console.WriteLine(":::::::::::::::::::::::::::::::::::::::");
+            
+
         }
     }
 }
